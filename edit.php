@@ -46,6 +46,7 @@
 									<input type="text" name="address" class="form-control"  value="<?php echo $row['address'];?>">
 								</div>
 								<div class="form-group">
+									<input type="hidden" name="id" value="<?php echo $id;?>">
 									<input type="submit" name="update" value="Update"class="btn btn-primary">
 								</div>
 							</form>

@@ -19,11 +19,12 @@ if(isset($_POST['insert']))
 }
 if(isset($_POST['update']))
 {
+	$id=$_POST['id'];
 	$name=$_POST['name'];
 	$mobile=$_POST['mobile'];
 	$email=$_POST['email'];
 	$address=$_POST['address'];
-	$sql="update users set name='$name',mobile='$mobile',email='$email',address='$address'";
+	$sql="update users set name='$name',mobile='$mobile',email='$email',address='$address' where id='$id'";
 	$fire=mysqli_query($con,$sql);
 	if($fire)
 	{
